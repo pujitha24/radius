@@ -138,8 +138,10 @@ namespace Radius.Core;
   
   For more information, see the Radius documentation at https://docs.radapp.io.
   """)
-model EnvironmentResource
-  is TrackedResourceRequired<EnvironmentProperties, "environments"> {
+model EnvironmentResource is TrackedResourceRequired<
+  EnvironmentProperties,
+  "environments"
+> {
   @doc("environment name")
   @key("environmentName")
   @path

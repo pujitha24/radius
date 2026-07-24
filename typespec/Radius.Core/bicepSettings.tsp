@@ -105,8 +105,10 @@ namespace Radius.Core;
   
   For more information, see the Radius documentation at https://docs.radapp.io.
   """)
-model BicepSettingsResource
-  is TrackedResourceRequired<BicepSettingsProperties, "bicepSettings"> {
+model BicepSettingsResource is TrackedResourceRequired<
+  BicepSettingsProperties,
+  "bicepSettings"
+> {
   @doc("Bicep settings name")
   @key("bicepSettingsName")
   @path

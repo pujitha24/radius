@@ -121,8 +121,10 @@ namespace Radius.Core;
   
   For more information, see the Radius documentation at https://docs.radapp.io.
   """)
-model RecipePackResource
-  is TrackedResourceRequired<RecipePackProperties, "recipePacks"> {
+model RecipePackResource is TrackedResourceRequired<
+  RecipePackProperties,
+  "recipePacks"
+> {
   @doc("Recipe pack name")
   @key("recipePackName")
   @path
